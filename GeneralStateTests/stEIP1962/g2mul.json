@@ -1,0 +1,72 @@
+{
+    "g1add" : {
+        "_info" : {
+            "comment" : "A test for g2 point 00b1d9d7d4e19966f41ed390530d41eebaaa1c707c3fb44303ae58df3c9e9c0589b4692a397ecdc90103df90ba78fb4a1c01af3190c07b6494b12dba8aae83c6f5a61251f82bdddcf4a00d0e8277cab9a7febdbbdb3f961ba3a2b38b9ad7a6a3cf49 and 00b1d9d7d4e19966f41ed390530d41eebaaa1c707c3fb44303ae58df3c9e9c0589b4692a397ecdc90103df90ba78fb4a1c01af3190c07b6494b12dba8aae83c6f5a61251f82bdddcf4a00d0e8277cab9a7febdbbdb3f961ba3a2b38b9ad7a6a3cf49 and factor 01a377718a6300d8dfa68b483f26b2d31c2501427bf56373224e9a7e9d15cabfc9 mul operation result on BLS12-384 curve"
+        },
+        "env" : {
+            "currentCoinbase" : "2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
+            "currentDifficulty" : "0x20000",
+            "currentGasLimit" : "10000000000",
+            "currentNumber" : "1",
+            "currentTimestamp" : "1000",
+            "previousHash" : "5e20a0453cecd065ea59c37ac63e079ee08998b6045136a8ce6635c7912ec0b6"
+        },
+        "expect" : [
+            {
+                "indexes" : {
+                    "data" : -1,
+                    "gas" : -1,
+                    "value" : 0
+                },
+                "network" : [">=Frontier"],
+                "result" : {
+                    "0000000000000000000000000000000000000009" : {
+                        "balance" : "",
+                        "code" : "{ lll code g2 mul}",
+                        "storage" : {
+                            "0x00" : "0x004b6e56e5c05c0326653db28ee57c4155a8257dfe50695f14e5bb6c15113429f154aa5cd0a75a9b7db8b7d9c878a11515024e5f4800afc640288d68e5c9c2209795f8789465e0b0f49d1c047341cc61b52068eff7186db42de70eae178e6a08e75b0096d93f4253ae722fd5833f508110b4154a4ed440401174ddeaec89ac236a9b8bb325ac07253e64b18e8cce66ecac4c1f01c2721afe0cb38260be4cf450e317e4c60e191b3c98348aae52d7b906bb9eacbb99ea7064ccac70b63a6926794ff538ce"
+                        }
+                    },
+                    "a94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
+                        "balance" : "1000000000000000000000",
+                        "code" : "0x",
+                        "nonce" : "0",
+                        "storage" : {
+                        }
+                    }
+                }
+            }
+        ],
+        "pre" : {
+            "0000000000000000000000000000000000000009" : {
+                "balance" : "",
+                "code" : "{ lll code g2 mul}",
+                "nonce" : "0",
+                "storage" : {
+                }
+            },
+            "a94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
+                "balance" : "1000000000000000000000",
+                "code" : "0x",
+                "nonce" : "0",
+                "storage" : {
+                }
+            }
+        },
+        "transaction" : {
+            "data" : [
+                "0x call g2 mul"
+            ],
+            "gasLimit" : [
+                "400000"
+            ],
+            "gasPrice" : "1",
+            "nonce" : "0",
+            "secretKey" : "45a915e4d060149eb4365960e6a7a45f334393093061116b197e3240065ff2d8",
+            "to" : "0000000000000000000000000000000000000009",
+            "value" : [
+                "0"
+            ]
+        }
+    }
+}
